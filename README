@@ -1,0 +1,24 @@
+Le programme pcc permet de déterminer le plus court chemin entre deux sommets d'un graphe à partir d'un fichier texte.
+Il s'exécute entièrement en ligne de commande :
+ - l'utilisateur choisi le type de recherche à effectuer (par nom ou par numéro)
+ - l'utilisateur indique l'emplacement du fichier texte contenant les informations du graphe (cela permet d'utiliser le programme sur n'importe quelle machine puisque l'emplacement du fichier texte n'est pas directement dans le fichier source)
+ - l'utilisateur choisi l'algorithme qu'il veut utiliser (Dijkstra ou Astar)
+ - l'utilisateur rentre les numéros (pour un réseau routier) ou le noms (pour le Métro) des stations de départ et d'arrivée
+ Le plus court chemin est alors affiché dans le terminal sous la forme d'une succession de sommet, le coût de ce plus court chemin est également indiqué.
+ Dans le même temps, le plus court chemin est affiché sous forme graphique.
+
+ Pour utiliser le programme pcc, il vous suffit de :
+ --> Le compiler à l'aide du Makefile fourni : $ make ./bin/pcc
+ --> L'exécuter en ligne de commande : $ ./bin/pcc
+ Avant de compiler le programme assurez vous que vous possédez bien :
+ - un dossier 'obj' à la racine du projet
+ - un dossier 'bin' à la racine du projet
+ S'il n'existe pas, vous risquez d'avoir des erreurs lors de la compilation
+
+Un programme de test du temps d'exécution vous est aussi fourni.
+Pour l'utilisez, vous devez :
+--> Le compiler à l'aide du Makefile fourni : $ make ./bin/test_temps
+--> L'exécuter en ligne de commande : $ ./bin/test_temps
+
+Si vous souhaitez supprimer les fichiers binaires et exécutables :
+--> tapez : $ make clear ou $ make clean
